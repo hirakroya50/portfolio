@@ -1,10 +1,18 @@
 export const projects = [
   {
-    title: "SaaS Web3 Platform",
+    title: "AI SaaS Automation Platform",
     description:
-      "Scalable multi-tenant SaaS platform with Web3 integrations, microservices backend, JWT auth, and real-time features built with Next.js and NestJS.",
-    tech: ["Next.js", "NestJS", "tRPC", "PostgreSQL", "Redis", "AWS S3"],
-    github: "https://github.com",
+      "Production-grade multi-tenant AI SaaS platform with OpenAI integration for content generation, workflow automation, role-based access, and real-time activity insights.",
+    tech: [
+      "Next.js",
+      "NestJS",
+      "OpenAI API",
+      "tRPC",
+      "PostgreSQL",
+      "Redis",
+      "AWS S3",
+    ],
+    github: "https://github.com/hirakroya50",
     live: "https://",
     stepsToTest: [
       "Clone the repository",
@@ -17,11 +25,19 @@ export const projects = [
     featured: true,
   },
   {
-    title: "Type-Safe API Gateway",
+    title: "AI Workflow API Gateway",
     description:
-      "End-to-end type-safe API gateway using tRPC, GraphQL, and Zod validation schemas. Includes RBAC authorization and OTP-based authentication flows.",
-    tech: ["Node.js", "tRPC", "GraphQL", "Zod", "JWT", "PostgreSQL"],
-    github: "https://github.com",
+      "Type-safe API gateway for AI products using tRPC, GraphQL, and Zod with prompt orchestration, usage metering, JWT auth, and RBAC permissioning.",
+    tech: [
+      "Node.js",
+      "tRPC",
+      "GraphQL",
+      "OpenAI API",
+      "Zod",
+      "JWT",
+      "PostgreSQL",
+    ],
+    github: "https://github.com/hirakroya50",
     live: "https://",
     stepsToTest: [
       "Clone the repo",
@@ -35,11 +51,11 @@ export const projects = [
     featured: true,
   },
   {
-    title: "Real-Time Job Queue System",
+    title: "Real-Time AI Job Queue Engine",
     description:
-      "Background job processing system with BullMQ, Redis pub/sub, and WebSocket notifications. Handles async tasks with retry logic and monitoring dashboard.",
-    tech: ["Node.js", "BullMQ", "Redis", "WebSockets", "Docker"],
-    github: "https://github.com",
+      "Background processing engine for AI tasks using BullMQ and Redis with queue prioritization, retries, WebSocket notifications, and execution dashboards.",
+    tech: ["Node.js", "BullMQ", "Redis", "WebSockets", "OpenAI API", "Docker"],
+    github: "https://github.com/hirakroya50",
     live: "https://",
     stepsToTest: [
       "Clone the repository",
@@ -54,9 +70,9 @@ export const projects = [
   {
     title: "Developer Portfolio",
     description:
-      "This portfolio — a futuristic Next.js 16 App Router site with motion.dev animations, glassmorphism UI, and data-driven content architecture.",
+      "A high-converting, recruiter-focused portfolio for an AI-focused full stack developer with motion.dev micro-interactions and premium glassmorphism UI.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "motion.dev"],
-    github: "https://github.com",
+    github: "https://github.com/hirakroya50",
     live: "https://hirakroy.dev",
     stepsToTest: [
       "Clone the repo",

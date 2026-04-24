@@ -12,8 +12,8 @@ export default function About() {
         <FadeIn>
           <SectionHeading
             badge="About"
-            title="Crafting Systems That Scale"
-            subtitle="From frontend pixels to backend pipelines — I build end-to-end."
+            title="AI-Focused Full Stack Builder"
+            subtitle="I design and ship AI SaaS products that deliver business outcomes fast."
           />
         </FadeIn>
 
@@ -24,8 +24,8 @@ export default function About() {
               <p>{profile.summary}</p>
               <p>
                 I thrive in fast-paced startup environments where shipping
-                quality code at velocity matters. My approach combines deep
-                technical expertise with AI-assisted workflows to deliver
+                quality code at velocity matters. My approach combines product
+                thinking, deep engineering, and AI workflows to deliver
                 robust, maintainable systems.
               </p>
 
@@ -37,11 +37,20 @@ export default function About() {
                     value: profile.email,
                     href: `mailto:${profile.email}`,
                   },
-                  { label: "Location", value: profile.location, href: null },
-                  { label: "GitHub", value: "@hirakroy", href: profile.github },
+                  { label: "Phone", value: profile.phone, href: `tel:${profile.phone}` },
+                  {
+                    label: "WhatsApp",
+                    value: profile.whatsapp,
+                    href: `https://wa.me/919002297603`,
+                  },
+                  {
+                    label: "GitHub",
+                    value: "@hirakroya50",
+                    href: profile.github,
+                  },
                   {
                     label: "LinkedIn",
-                    value: "hirakroy",
+                    value: "royhirakp",
                     href: profile.linkedin,
                   },
                 ].map((item) => (

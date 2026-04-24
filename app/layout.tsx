@@ -13,21 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hirak Roy — Full Stack Engineer",
+  title: "Hirak Roy — AI-Focused Full Stack Developer",
   description:
-    "Full Stack Engineer building scalable SaaS & Web3 applications. Specializing in React, Next.js, TypeScript, Node.js, and distributed microservices.",
+    "AI-focused full stack developer building AI SaaS products, OpenAI-powered features, and scalable web platforms with Next.js, TypeScript, and Node.js.",
   keywords: [
-    "Full Stack Engineer",
+    "AI Full Stack Developer",
+    "OpenAI Integration",
+    "AI SaaS Developer",
     "React",
     "Next.js",
     "TypeScript",
-    "Web3",
-    "SaaS",
+    "Node.js",
   ],
   authors: [{ name: "Hirak Roy" }],
   openGraph: {
-    title: "Hirak Roy — Full Stack Engineer",
-    description: "Building scalable SaaS & Web3 applications",
+    title: "Hirak Roy — AI-Focused Full Stack Developer",
+    description: "Building AI SaaS products with production OpenAI integrations",
     type: "website",
   },
 };

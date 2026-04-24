@@ -12,7 +12,7 @@ export default function Experience() {
           <SectionHeading
             badge="Experience"
             title="Where I've Worked"
-            subtitle="Building production systems at the intersection of SaaS and Web3."
+            subtitle="Shipping AI SaaS, full-stack platforms, and scalable microservices in production."
           />
         </FadeIn>
 

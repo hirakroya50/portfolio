@@ -7,7 +7,8 @@ export const experience = [
     location: "Remote",
     current: true,
     highlights: [
-      "Developed and maintained scalable SaaS Web3 applications using Next.js and NestJS microservices",
+      "Developed and maintained scalable SaaS, Web3, and AI-enabled applications using Next.js and NestJS microservices",
+      "Built AI SaaS product modules with OpenAI integrations for automation, generation, and productivity workflows",
       "Designed and implemented backend business logic for distributed microservices architecture, building scalable REST APIs with Node.js",
       "Built type-safe APIs using tRPC and integrated frontend with efficient data-fetching strategies",
       "Implemented JWT-based authentication, RBAC authorization, and OTP verification systems",
@@ -22,6 +23,7 @@ export const experience = [
     tech: [
       "Next.js",
       "NestJS",
+      "OpenAI API",
       "tRPC",
       "GraphQL",
       "PostgreSQL",

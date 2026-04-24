@@ -30,7 +30,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-green-500/20 text-green-400 text-xs font-mono mb-8"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-            Available for opportunities
+            Available for AI Full Stack Roles
           </motion.div>
 
           {/* Main heading */}
@@ -52,7 +52,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="text-white/50 text-lg sm:text-xl max-w-2xl leading-relaxed mb-10"
           >
-            {profile.summary.split(".")[0]}.
+            {profile.tagline}. I ship high-impact products with Next.js,
+            Node.js, and production OpenAI integrations.
           </motion.p>
 
           {/* CTAs */}

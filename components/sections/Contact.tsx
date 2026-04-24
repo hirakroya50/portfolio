@@ -21,8 +21,8 @@ export default function Contact() {
         <FadeIn>
           <SectionHeading
             badge="Contact"
-            title="Let's Work Together"
-            subtitle="Open to full-time roles, contract work, and interesting collaborations."
+            title="Hire Me For AI + Full Stack Roles"
+            subtitle="Open to immediate opportunities in AI SaaS, full-stack engineering, and product-focused teams."
           />
         </FadeIn>
 
@@ -43,10 +43,10 @@ export default function Contact() {
               />
               <div className="relative z-10">
                 <p className="text-white/60 text-base leading-relaxed mb-8">
-                  I&apos;m always excited to hear about new opportunities and
-                  interesting projects. Whether you need a full-stack engineer
-                  for your SaaS product, Web3 platform, or need help
-                  architecting scalable systems - let&apos;s talk.
+                  I&apos;m actively looking for strong product engineering teams
+                  where I can build AI-first SaaS experiences, production
+                  OpenAI integrations, and scalable full-stack systems. If
+                  you&apos;re hiring, I can join quickly.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <motion.a
@@ -89,14 +89,25 @@ export default function Contact() {
                 },
                 {
                   label: "GitHub",
-                  value: "github.com/hirakroy",
+                  value: "github.com/hirakroya50",
                   href: profile.github,
                   external: true,
                 },
                 {
                   label: "LinkedIn",
-                  value: "linkedin.com/in/hirakroy",
+                  value: "linkedin.com/in/royhirakp",
                   href: profile.linkedin,
+                  external: true,
+                },
+                {
+                  label: "Phone",
+                  value: profile.phone,
+                  href: `tel:${profile.phone}`,
+                },
+                {
+                  label: "WhatsApp",
+                  value: profile.whatsapp,
+                  href: "https://wa.me/919002297603",
                   external: true,
                 },
               ].map((item) => (
