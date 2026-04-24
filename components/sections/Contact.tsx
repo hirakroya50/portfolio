@@ -43,10 +43,10 @@ export default function Contact() {
               />
               <div className="relative z-10">
                 <p className="text-white/60 text-base leading-relaxed mb-8">
-                  I'm always excited to hear about new opportunities and
+                  I&apos;m always excited to hear about new opportunities and
                   interesting projects. Whether you need a full-stack engineer
                   for your SaaS product, Web3 platform, or need help
-                  architecting scalable systems — let's talk.
+                  architecting scalable systems - let&apos;s talk.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <motion.a
