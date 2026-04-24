@@ -10,32 +10,32 @@ const colorMap: Record<
   string,
   { badge: string; border: string; iconText: string }
 > = {
-    blue: {
-      badge: "text-blue-300 border-blue-500/20 bg-blue-500/5",
-      border: "border-blue-500/20",
-      iconText: "text-blue-300",
-    },
-    purple: {
-      badge: "text-purple-300 border-purple-500/20 bg-purple-500/5",
-      border: "border-purple-500/20",
-      iconText: "text-purple-300",
-    },
-    cyan: {
-      badge: "text-cyan-300 border-cyan-500/20 bg-cyan-500/5",
-      border: "border-cyan-500/20",
-      iconText: "text-cyan-300",
-    },
-    green: {
-      badge: "text-green-300 border-green-500/20 bg-green-500/5",
-      border: "border-green-500/20",
-      iconText: "text-green-300",
-    },
-    pink: {
-      badge: "text-pink-300 border-pink-500/20 bg-pink-500/5",
-      border: "border-pink-500/20",
-      iconText: "text-pink-300",
-    },
-  };
+  blue: {
+    badge: "text-blue-300 border-blue-500/20 bg-blue-500/5",
+    border: "border-blue-500/20",
+    iconText: "text-blue-300",
+  },
+  purple: {
+    badge: "text-purple-300 border-purple-500/20 bg-purple-500/5",
+    border: "border-purple-500/20",
+    iconText: "text-purple-300",
+  },
+  cyan: {
+    badge: "text-cyan-300 border-cyan-500/20 bg-cyan-500/5",
+    border: "border-cyan-500/20",
+    iconText: "text-cyan-300",
+  },
+  green: {
+    badge: "text-green-300 border-green-500/20 bg-green-500/5",
+    border: "border-green-500/20",
+    iconText: "text-green-300",
+  },
+  pink: {
+    badge: "text-pink-300 border-pink-500/20 bg-pink-500/5",
+    border: "border-pink-500/20",
+    iconText: "text-pink-300",
+  },
+};
 
 export default function Skills() {
   const [active, setActive] = useState<string>(skillCategories[0].category);
