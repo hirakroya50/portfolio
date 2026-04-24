@@ -134,16 +134,23 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex items-center"
       >
-        <span className="text-white/20 text-xs font-mono tracking-widest">
-          SCROLL
-        </span>
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          className="w-px h-8 bg-gradient-to-b from-indigo-500/60 to-transparent"
-        />
+        <motion.button
+          type="button"
+          aria-label="Scroll to next section"
+          onClick={() => {
+            document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          animate={{ y: [0, 4, 0] }}
+          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+          className="group rounded-full border border-white/15 bg-white/[0.02] px-3 py-2 backdrop-blur-sm hover:border-indigo-400/40 hover:bg-indigo-400/5 transition-colors"
+        >
+          <div className="flex flex-col items-center leading-none">
+            <span className="text-white/45 group-hover:text-indigo-300 transition-colors">⌄</span>
+            <span className="-mt-1 text-white/25 group-hover:text-indigo-400/70 transition-colors">⌄</span>
+          </div>
+        </motion.button>
       </motion.div>
     </section>
   );

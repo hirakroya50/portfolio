@@ -63,6 +63,9 @@ function ProjectCard({
   project: Project;
   featured?: boolean;
 }) {
+  const hasValidLiveLink =
+    project.live && project.live.startsWith("http") && project.live !== "https://";
+
   return (
     <motion.div
       whileHover={{ y: -4 }}
@@ -87,7 +90,7 @@ function ProjectCard({
         >
           {project.title}
         </h3>
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-2 shrink-0">
           {project.github && (
             <a
               href={project.github}
@@ -99,7 +102,7 @@ function ProjectCard({
               <GithubIcon size={16} />
             </a>
           )}
-          {project.live && (
+          {hasValidLiveLink && (
             <a
               href={project.live}
               target="_blank"
