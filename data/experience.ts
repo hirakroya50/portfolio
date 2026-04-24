@@ -1,0 +1,49 @@
+export const experience = [
+  {
+    company: "Metaverse Ventures Pvt. Ltd",
+    role: "Full Stack Engineer",
+    type: "Full-time",
+    period: "Oct 2024 – Present",
+    location: "Remote",
+    current: true,
+    highlights: [
+      "Developed and maintained scalable SaaS Web3 applications using Next.js and NestJS microservices",
+      "Designed and implemented backend business logic for distributed microservices architecture, building scalable REST APIs with Node.js",
+      "Built type-safe APIs using tRPC and integrated frontend with efficient data-fetching strategies",
+      "Implemented JWT-based authentication, RBAC authorization, and OTP verification systems",
+      "Configured Nginx reverse proxy for production deployment",
+      "Integrated AWS S3 and DigitalOcean Spaces for secure file storage and CDN delivery",
+      "Implemented Redis caching to optimize API response time",
+      "Used BullMQ for background job processing and async task handling",
+      "Improved response time by 35% by optimizing GraphQL queries and leveraging PostgreSQL indexes",
+      "Reduced deployment time by 50% by optimizing Docker image size",
+      "Reduced bugs by 50% through AI-assisted code audits leveraging AI workflows",
+    ],
+    tech: ["Next.js", "NestJS", "tRPC", "GraphQL", "PostgreSQL", "Redis", "BullMQ", "AWS S3", "Docker", "Nginx"],
+  },
+  {
+    company: "Metaverse Ventures Pvt. Ltd",
+    role: "Full Stack Engineer Intern",
+    type: "Internship",
+    period: "Mar 2024 – Oct 2024",
+    location: "Remote",
+    current: false,
+    highlights: [
+      "Built reusable and scalable UI components using React, Next.js, and TypeScript",
+      "Contributed to performance improvements and frontend optimization",
+      "Managed complex application state using Redux and Jotai",
+      "Integrated APIs using TanStack Query and custom React hooks",
+      "Worked closely with UI/UX and animation teams to deliver pixel-perfect user experiences",
+      "Incorporated web scraping scripts to populate demo data sets",
+    ],
+    tech: ["React.js", "Next.js", "TypeScript", "Redux", "Jotai", "TanStack Query"],
+  },
+];
+
+export const education = [
+  {
+    degree: "B.Tech, Electrical Engineering",
+    institution: "University",
+    year: "2020",
+  },
+];
