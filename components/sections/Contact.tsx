@@ -44,9 +44,9 @@ export default function Contact() {
               <div className="relative z-10">
                 <p className="text-white/60 text-base leading-relaxed mb-8">
                   I&apos;m actively looking for strong product engineering teams
-                  where I can build AI-first SaaS experiences, production
-                  OpenAI integrations, and scalable full-stack systems. If
-                  you&apos;re hiring, I can join quickly.
+                  where I can build AI-first SaaS experiences, production OpenAI
+                  integrations, and scalable full-stack systems. If you&apos;re
+                  hiring, I can join quickly.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <motion.a

@@ -25,8 +25,8 @@ export default function About() {
               <p>
                 I thrive in fast-paced startup environments where shipping
                 quality code at velocity matters. My approach combines product
-                thinking, deep engineering, and AI workflows to deliver
-                robust, maintainable systems.
+                thinking, deep engineering, and AI workflows to deliver robust,
+                maintainable systems.
               </p>
 
               {/* Contact details */}
@@ -37,7 +37,11 @@ export default function About() {
                     value: profile.email,
                     href: `mailto:${profile.email}`,
                   },
-                  { label: "Phone", value: profile.phone, href: `tel:${profile.phone}` },
+                  {
+                    label: "Phone",
+                    value: profile.phone,
+                    href: `tel:${profile.phone}`,
+                  },
                   {
                     label: "WhatsApp",
                     value: profile.whatsapp,

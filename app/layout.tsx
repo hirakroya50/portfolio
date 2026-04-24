@@ -28,7 +28,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Hirak Roy" }],
   openGraph: {
     title: "Hirak Roy — AI-Focused Full Stack Developer",
-    description: "Building AI SaaS products with production OpenAI integrations",
+    description:
+      "Building AI SaaS products with production OpenAI integrations",
     type: "website",
   },
 };
