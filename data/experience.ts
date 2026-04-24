@@ -19,7 +19,18 @@ export const experience = [
       "Reduced deployment time by 50% by optimizing Docker image size",
       "Reduced bugs by 50% through AI-assisted code audits leveraging AI workflows",
     ],
-    tech: ["Next.js", "NestJS", "tRPC", "GraphQL", "PostgreSQL", "Redis", "BullMQ", "AWS S3", "Docker", "Nginx"],
+    tech: [
+      "Next.js",
+      "NestJS",
+      "tRPC",
+      "GraphQL",
+      "PostgreSQL",
+      "Redis",
+      "BullMQ",
+      "AWS S3",
+      "Docker",
+      "Nginx",
+    ],
   },
   {
     company: "Metaverse Ventures Pvt. Ltd",
@@ -36,7 +47,14 @@ export const experience = [
       "Worked closely with UI/UX and animation teams to deliver pixel-perfect user experiences",
       "Incorporated web scraping scripts to populate demo data sets",
     ],
-    tech: ["React.js", "Next.js", "TypeScript", "Redux", "Jotai", "TanStack Query"],
+    tech: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Jotai",
+      "TanStack Query",
+    ],
   },
 ];
 

@@ -36,11 +36,17 @@ export default function Contact() {
               {/* Ambient glow */}
               <div
                 className="absolute top-0 right-0 w-64 h-64 opacity-20 blur-3xl pointer-events-none"
-                style={{ background: "radial-gradient(circle, #a855f7, transparent 70%)" }}
+                style={{
+                  background:
+                    "radial-gradient(circle, #a855f7, transparent 70%)",
+                }}
               />
               <div className="relative z-10">
                 <p className="text-white/60 text-base leading-relaxed mb-8">
-                  I'm always excited to hear about new opportunities and interesting projects. Whether you need a full-stack engineer for your SaaS product, Web3 platform, or need help architecting scalable systems — let's talk.
+                  I'm always excited to hear about new opportunities and
+                  interesting projects. Whether you need a full-stack engineer
+                  for your SaaS product, Web3 platform, or need help
+                  architecting scalable systems — let's talk.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <motion.a

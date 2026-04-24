@@ -4,7 +4,11 @@ type SectionHeadingProps = {
   subtitle?: string;
 };
 
-export default function SectionHeading({ badge, title, subtitle }: SectionHeadingProps) {
+export default function SectionHeading({
+  badge,
+  title,
+  subtitle,
+}: SectionHeadingProps) {
   return (
     <div className="mb-12 sm:mb-16">
       {badge && (

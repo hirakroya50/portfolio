@@ -9,11 +9,15 @@ export default function Hero() {
       {/* Ambient blobs */}
       <div
         className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
+        style={{
+          background: "radial-gradient(circle, #6366f1, transparent 70%)",
+        }}
       />
       <div
         className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: "radial-gradient(circle, #a855f7, transparent 70%)" }}
+        style={{
+          background: "radial-gradient(circle, #a855f7, transparent 70%)",
+        }}
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-24 pb-16">
@@ -112,8 +116,12 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.65 + i * 0.08 }}
                 className="glass glass-hover border border-white/[0.07] rounded-xl p-4 text-center group cursor-default"
               >
-                <div className="text-2xl font-bold gradient-text mb-1">{stat.value}</div>
-                <div className="text-xs text-white/40 font-medium">{stat.label}</div>
+                <div className="text-2xl font-bold gradient-text mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-xs text-white/40 font-medium">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -127,7 +135,9 @@ export default function Hero() {
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-white/20 text-xs font-mono tracking-widest">SCROLL</span>
+        <span className="text-white/20 text-xs font-mono tracking-widest">
+          SCROLL
+        </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

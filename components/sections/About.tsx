@@ -23,32 +23,50 @@ export default function About() {
             <div className="space-y-5 text-white/60 leading-relaxed">
               <p>{profile.summary}</p>
               <p>
-                I thrive in fast-paced startup environments where shipping quality code at velocity matters. My approach combines deep technical expertise with AI-assisted workflows to deliver robust, maintainable systems.
+                I thrive in fast-paced startup environments where shipping
+                quality code at velocity matters. My approach combines deep
+                technical expertise with AI-assisted workflows to deliver
+                robust, maintainable systems.
               </p>
 
               {/* Contact details */}
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
-                  { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
+                  {
+                    label: "Email",
+                    value: profile.email,
+                    href: `mailto:${profile.email}`,
+                  },
                   { label: "Location", value: profile.location, href: null },
                   { label: "GitHub", value: "@hirakroy", href: profile.github },
-                  { label: "LinkedIn", value: "hirakroy", href: profile.linkedin },
+                  {
+                    label: "LinkedIn",
+                    value: "hirakroy",
+                    href: profile.linkedin,
+                  },
                 ].map((item) => (
-                  <div key={item.label} className="glass rounded-lg px-4 py-3 border border-white/[0.06]">
+                  <div
+                    key={item.label}
+                    className="glass rounded-lg px-4 py-3 border border-white/[0.06]"
+                  >
                     <div className="text-xs text-white/30 font-mono uppercase tracking-wider mb-1">
                       {item.label}
                     </div>
                     {item.href ? (
                       <a
                         href={item.href}
-                        target={item.href.startsWith("http") ? "_blank" : undefined}
+                        target={
+                          item.href.startsWith("http") ? "_blank" : undefined
+                        }
                         rel="noopener noreferrer"
                         className="text-sm text-indigo-300 hover:text-indigo-200 transition-colors"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <span className="text-sm text-white/70">{item.value}</span>
+                      <span className="text-sm text-white/70">
+                        {item.value}
+                      </span>
                     )}
                   </div>
                 ))}
@@ -62,7 +80,10 @@ export default function About() {
               <div className="text-xs text-white/30 font-mono uppercase tracking-widest mb-4">
                 Core Competencies
               </div>
-              <StaggerContainer className="flex flex-col gap-2" staggerDelay={0.05}>
+              <StaggerContainer
+                className="flex flex-col gap-2"
+                staggerDelay={0.05}
+              >
                 {coreCompetencies.map((item) => (
                   <div
                     key={item}

@@ -75,7 +75,10 @@ body {
 }
 
 .glass-hover {
-  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .glass-hover:hover {
@@ -86,11 +89,15 @@ body {
 
 /* Glow effects */
 .glow-blue {
-  box-shadow: 0 0 24px rgba(99, 102, 241, 0.2), 0 0 1px rgba(99, 102, 241, 0.4);
+  box-shadow:
+    0 0 24px rgba(99, 102, 241, 0.2),
+    0 0 1px rgba(99, 102, 241, 0.4);
 }
 
 .glow-purple {
-  box-shadow: 0 0 24px rgba(168, 85, 247, 0.2), 0 0 1px rgba(168, 85, 247, 0.4);
+  box-shadow:
+    0 0 24px rgba(168, 85, 247, 0.2),
+    0 0 1px rgba(168, 85, 247, 0.4);
 }
 
 /* Neon border */
@@ -102,7 +109,12 @@ body {
 
 /* Section fade */
 .section-divider {
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.3),
+    transparent
+  );
   height: 1px;
   width: 100%;
 }

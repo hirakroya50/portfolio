@@ -6,33 +6,34 @@ import { skillCategories } from "@/data/skills";
 import { FadeIn, StaggerContainer } from "@/components/ui/AnimatedSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 
-const colorMap: Record<string, { badge: string; dot: string; border: string }> = {
-  blue: {
-    badge: "text-blue-300 border-blue-500/20 bg-blue-500/5",
-    dot: "bg-blue-400",
-    border: "border-blue-500/20",
-  },
-  purple: {
-    badge: "text-purple-300 border-purple-500/20 bg-purple-500/5",
-    dot: "bg-purple-400",
-    border: "border-purple-500/20",
-  },
-  cyan: {
-    badge: "text-cyan-300 border-cyan-500/20 bg-cyan-500/5",
-    dot: "bg-cyan-400",
-    border: "border-cyan-500/20",
-  },
-  green: {
-    badge: "text-green-300 border-green-500/20 bg-green-500/5",
-    dot: "bg-green-400",
-    border: "border-green-500/20",
-  },
-  pink: {
-    badge: "text-pink-300 border-pink-500/20 bg-pink-500/5",
-    dot: "bg-pink-400",
-    border: "border-pink-500/20",
-  },
-};
+const colorMap: Record<string, { badge: string; dot: string; border: string }> =
+  {
+    blue: {
+      badge: "text-blue-300 border-blue-500/20 bg-blue-500/5",
+      dot: "bg-blue-400",
+      border: "border-blue-500/20",
+    },
+    purple: {
+      badge: "text-purple-300 border-purple-500/20 bg-purple-500/5",
+      dot: "bg-purple-400",
+      border: "border-purple-500/20",
+    },
+    cyan: {
+      badge: "text-cyan-300 border-cyan-500/20 bg-cyan-500/5",
+      dot: "bg-cyan-400",
+      border: "border-cyan-500/20",
+    },
+    green: {
+      badge: "text-green-300 border-green-500/20 bg-green-500/5",
+      dot: "bg-green-400",
+      border: "border-green-500/20",
+    },
+    pink: {
+      badge: "text-pink-300 border-pink-500/20 bg-pink-500/5",
+      dot: "bg-pink-400",
+      border: "border-pink-500/20",
+    },
+  };
 
 export default function Skills() {
   const [active, setActive] = useState<string>(skillCategories[0].category);
@@ -67,12 +68,16 @@ export default function Skills() {
                         : "hover:bg-white/[0.04] text-white/50 hover:text-white/80 border border-transparent"
                     }`}
                   >
-                    <span className={`text-lg leading-none ${isActive ? `text-${cat.color}-300` : "opacity-40"}`}>
+                    <span
+                      className={`text-lg leading-none ${isActive ? `text-${cat.color}-300` : "opacity-40"}`}
+                    >
                       {cat.icon}
                     </span>
                     <span className="text-sm font-medium">{cat.category}</span>
                     {isActive && (
-                      <span className={`ml-auto text-xs font-mono px-1.5 py-0.5 rounded border ${c.badge}`}>
+                      <span
+                        className={`ml-auto text-xs font-mono px-1.5 py-0.5 rounded border ${c.badge}`}
+                      >
                         {cat.skills.length}
                       </span>
                     )}
@@ -94,11 +99,17 @@ export default function Skills() {
                   transition={{ duration: 0.25 }}
                 >
                   <div className="flex items-center gap-2 mb-6">
-                    <span className={`text-xl ${colors.dot.replace("bg-", "text-").replace("400", "300")}`}>
+                    <span
+                      className={`text-xl ${colors.dot.replace("bg-", "text-").replace("400", "300")}`}
+                    >
                       {activeCategory.icon}
                     </span>
-                    <h3 className="text-white font-semibold">{activeCategory.category}</h3>
-                    <span className={`ml-2 text-xs font-mono px-2 py-0.5 rounded-full border ${colors.badge}`}>
+                    <h3 className="text-white font-semibold">
+                      {activeCategory.category}
+                    </h3>
+                    <span
+                      className={`ml-2 text-xs font-mono px-2 py-0.5 rounded-full border ${colors.badge}`}
+                    >
                       {activeCategory.skills.length} skills
                     </span>
                   </div>

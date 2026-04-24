@@ -30,7 +30,7 @@ export default function Navbar() {
           if (entry.isIntersecting) setActiveSection(entry.target.id);
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
     navLinks.forEach(({ href }) => {
       const el = document.querySelector(href);
@@ -114,7 +114,9 @@ export default function Navbar() {
               className="block h-px bg-current"
             />
             <motion.span
-              animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+              animate={
+                mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
+              }
               className="block h-px bg-current"
             />
           </div>

@@ -14,7 +14,9 @@ export default function Projects() {
       {/* Ambient glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] opacity-5 blur-3xl pointer-events-none rounded-full"
-        style={{ background: "radial-gradient(ellipse, #a855f7, transparent 70%)" }}
+        style={{
+          background: "radial-gradient(ellipse, #a855f7, transparent 70%)",
+        }}
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
@@ -27,7 +29,10 @@ export default function Projects() {
         </FadeIn>
 
         {/* Featured projects */}
-        <StaggerContainer className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6" staggerDelay={0.1}>
+        <StaggerContainer
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6"
+          staggerDelay={0.1}
+        >
           {featured.map((project) => (
             <ProjectCard key={project.title} project={project} featured />
           ))}
@@ -35,7 +40,10 @@ export default function Projects() {
 
         {/* Other projects */}
         {rest.length > 0 && (
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" staggerDelay={0.08}>
+          <StaggerContainer
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+            staggerDelay={0.08}
+          >
             {rest.map((project) => (
               <ProjectCard key={project.title} project={project} />
             ))}
@@ -48,7 +56,13 @@ export default function Projects() {
 
 type Project = (typeof projects)[number];
 
-function ProjectCard({ project, featured = false }: { project: Project; featured?: boolean }) {
+function ProjectCard({
+  project,
+  featured = false,
+}: {
+  project: Project;
+  featured?: boolean;
+}) {
   return (
     <motion.div
       whileHover={{ y: -4 }}
@@ -58,13 +72,19 @@ function ProjectCard({ project, featured = false }: { project: Project; featured
       }`}
     >
       {/* Glow effect */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl"
-        style={{ background: "radial-gradient(400px at 50% -20%, rgba(99,102,241,0.06), transparent 70%)" }}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl"
+        style={{
+          background:
+            "radial-gradient(400px at 50% -20%, rgba(99,102,241,0.06), transparent 70%)",
+        }}
       />
 
       {/* Top: title + links */}
       <div className="flex items-start justify-between gap-4 mb-4">
-        <h3 className={`font-semibold text-white ${featured ? "text-xl" : "text-base"}`}>
+        <h3
+          className={`font-semibold text-white ${featured ? "text-xl" : "text-base"}`}
+        >
           {project.title}
         </h3>
         <div className="flex items-center gap-2 flex-shrink-0">
@@ -94,7 +114,9 @@ function ProjectCard({ project, featured = false }: { project: Project; featured
       </div>
 
       {/* Description */}
-      <p className="text-sm text-white/50 leading-relaxed mb-6 flex-1">{project.description}</p>
+      <p className="text-sm text-white/50 leading-relaxed mb-6 flex-1">
+        {project.description}
+      </p>
 
       {/* Steps to test */}
       {featured && project.stepsToTest.length > 0 && (
@@ -104,8 +126,13 @@ function ProjectCard({ project, featured = false }: { project: Project; featured
           </div>
           <ol className="space-y-1.5">
             {project.stepsToTest.map((step, i) => (
-              <li key={i} className="flex items-start gap-2 text-xs text-white/40">
-                <span className="flex-shrink-0 font-mono text-indigo-500/60">{i + 1}.</span>
+              <li
+                key={i}
+                className="flex items-start gap-2 text-xs text-white/40"
+              >
+                <span className="flex-shrink-0 font-mono text-indigo-500/60">
+                  {i + 1}.
+                </span>
                 {step}
               </li>
             ))}
@@ -138,7 +165,14 @@ function GithubIcon({ size = 18 }: { size?: number }) {
 
 function ExternalLinkIcon({ size = 18 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
       <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
       <polyline points="15,3 21,3 21,9" />
       <line x1="10" y1="14" x2="21" y2="3" />
