@@ -64,7 +64,9 @@ function ProjectCard({
   featured?: boolean;
 }) {
   const hasValidLiveLink =
-    project.live && project.live.startsWith("http") && project.live !== "https://";
+    project.live &&
+    project.live.startsWith("http") &&
+    project.live !== "https://";
 
   return (
     <motion.div
