@@ -13,7 +13,7 @@ export const profile = {
   portfolio: "https://hirakroy.dev",
   avatar: "/avatar.png",
   stats: [
-    { label: "Years Experience", value: "2+" },
+    { label: "Years Experience ", value: "2+" },
     { label: "AI + SaaS Projects", value: "20+" },
     { label: "OpenAI Features Built", value: "10+" },
     { label: "API Response Improvement", value: "35%" },
