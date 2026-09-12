@@ -21,8 +21,8 @@ export function Hero() {
         }}
       />
 
-      <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+      <div className="relative mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-6">
           <div className="shrink-0">
             <Image
               src={profile.avatar}
@@ -50,7 +50,7 @@ export function Hero() {
                 </span> · {profile.location}
             </p>
 
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-secondary-foreground">
+            <div className="mt-6 max-w-prose space-y-4 text-base leading-relaxed text-secondary-foreground">
               {bioParagraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}
