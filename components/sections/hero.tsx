@@ -22,59 +22,55 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-6">
-          <div className="shrink-0">
-            <Image
-              src={profile.avatar}
-              alt={profile.name}
-              width={80}
-              height={80}
-              className="h-16 w-16 rounded-full border-2 border-accent object-cover sm:h-20 sm:w-20"
-              priority
-            />
-          </div>
+        <p className="mb-4 text-sm font-medium text-accent">
+          {profile.availability}
+        </p>
 
-          <div className="min-w-0 flex-1">
-            <p className="mb-2 text-sm font-medium text-accent">
-              {profile.availability}
-            </p>
-            <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+        <div className="flex items-center gap-4">
+          <Image
+            src={profile.avatar}
+            alt={profile.name}
+            width={72}
+            height={72}
+            className="h-14 w-14 shrink-0 rounded-full border-2 border-accent object-cover sm:h-16 sm:w-16"
+            priority
+          />
+          <div className="min-w-0">
+            <h1 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
               {profile.name}
             </h1>
-            <p className="mt-2 text-lg font-medium text-primary sm:text-xl">
+            <p className="mt-1 text-base font-medium text-primary sm:text-lg">
               {profile.title}
             </p>
             <p className="mt-1 text-sm text-muted">
-              <span className="text-4xl font-bold text-white">
-              {profile.yearsExperience} years of experience
-                </span> · {profile.location}
+              {profile.yearsExperience} years of experience · {profile.location}
             </p>
-
-            <div className="mt-6 max-w-prose space-y-4 text-base leading-relaxed text-secondary-foreground">
-              {bioParagraphs.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-              ))}
-            </div>
-
-            <div className="mt-8">
-              <HeroSocialLinks profile={profile} />
-            </div>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link href="/#contact">
-                  Contact
-                  <ArrowDown className="h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="secondary" size="lg">
-                <Link href={profile.resumePath} download>
-                  <Download className="h-4 w-4" />
-                  Download Resume
-                </Link>
-              </Button>
-            </div>
           </div>
+        </div>
+
+        <div className="mt-6 max-w-prose space-y-4 text-base leading-relaxed text-secondary-foreground">
+          {bioParagraphs.map((paragraph) => (
+            <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+          ))}
+        </div>
+
+        <div className="mt-8">
+          <HeroSocialLinks profile={profile} />
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Button asChild size="lg">
+            <Link href="/#contact">
+              Contact
+              <ArrowDown className="h-4 w-4" />
+            </Link>
+          </Button>
+          <Button asChild variant="secondary" size="lg">
+            <Link href={profile.resumePath} download>
+              <Download className="h-4 w-4" />
+              Download Resume
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

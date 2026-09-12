@@ -16,7 +16,7 @@ Lately, most of my time goes into practical AI tooling: turning raw prompts into
   linkedin: "https://www.linkedin.com/in/royhirakp/",
   x: "https://x.com/hirakroya50",
   github: "https://github.com/hirakroya50",
-  leetcode: "https://leetcode.com/u/hirakroya50/",
+  leetcode: "https://leetcode.com/u/royhirakp/",
   portfolio: "https://hirakroy.dev",
   resumePath: "/resume.pdf",
 };

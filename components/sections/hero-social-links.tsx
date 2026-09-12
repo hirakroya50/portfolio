@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SiLeetcode } from "react-icons/si";
 
 import { cn } from "@/lib/utils";
 import type { Profile } from "@/lib/schemas";
@@ -60,6 +61,7 @@ export function HeroSocialLinks({ profile }: HeroSocialLinksProps) {
     { label: "Telegram", href: profile.telegram, external: true, icon: TelegramIcon },
     { label: "LinkedIn", href: profile.linkedin, external: true, icon: LinkedInIcon },
     { label: "X", href: profile.x, external: true, icon: XIcon },
+    { label: "LeetCode", href: profile.leetcode, external: true, icon: SiLeetcode },
     { label: "Email", href: `mailto:${profile.email}`, external: false, icon: MailIcon },
     { label: "Mobile", href: phoneHref, external: false, icon: PhoneIcon },
   ];

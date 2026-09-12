@@ -15,7 +15,7 @@ export function Contact() {
     { label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
     { label: "LinkedIn", value: "linkedin.com/in/royhirakp", href: profile.linkedin },
     { label: "GitHub", value: "github.com/hirakroya50", href: profile.github },
-    { label: "LeetCode", value: "leetcode.com/u/hirakroya50", href: profile.leetcode },
+    { label: "LeetCode", value: "leetcode.com/u/royhirakp", href: profile.leetcode },
   ];
 
   return (
