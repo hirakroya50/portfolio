@@ -43,7 +43,10 @@ export function Hero() {
               {profile.title}
             </p>
             <p className="mt-1 text-sm text-muted">
-              {profile.yearsExperience} years of experience · {profile.location}
+              <span className="text-xl font-semibold text-foreground sm:text-2xl">
+                {profile.yearsExperience} years of experience
+              </span>
+              <span className="text-muted"> · {profile.location}</span>
             </p>
           </div>
         </div>

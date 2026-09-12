@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { SiLeetcode } from "react-icons/si";
+import { SiGithub, SiLeetcode } from "react-icons/si";
 
 import { cn } from "@/lib/utils";
 import type { Profile } from "@/lib/schemas";
@@ -60,6 +60,7 @@ export function HeroSocialLinks({ profile }: HeroSocialLinksProps) {
   const links = [
     { label: "Telegram", href: profile.telegram, external: true, icon: TelegramIcon },
     { label: "LinkedIn", href: profile.linkedin, external: true, icon: LinkedInIcon },
+    { label: "GitHub", href: profile.github, external: true, icon: SiGithub },
     { label: "X", href: profile.x, external: true, icon: XIcon },
     { label: "LeetCode", href: profile.leetcode, external: true, icon: SiLeetcode },
     { label: "Email", href: `mailto:${profile.email}`, external: false, icon: MailIcon },

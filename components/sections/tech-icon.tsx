@@ -1,12 +1,15 @@
 import { FaAws } from "react-icons/fa6";
-import { RiOpenaiFill } from "react-icons/ri";
+import { RiOpenaiFill, RiRobot2Line } from "react-icons/ri";
 import {
   SiCircleci,
+  SiCloudflare,
+  SiDigitalocean,
   SiDocker,
   SiElasticsearch,
   SiFastapi,
   SiGithubactions,
   SiGraphql,
+  SiMongodb,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
@@ -26,8 +29,11 @@ import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, IconType> = {
   aws: FaAws,
+  dynamodb: FaAws,
   docker: SiDocker,
   redis: SiRedis,
+  cloudflare: SiCloudflare,
+  digitalocean: SiDigitalocean,
   "github-actions": SiGithubactions,
   cicd: SiCircleci,
   "react-native": TbBrandReactNative,
@@ -40,9 +46,11 @@ const iconMap: Record<string, IconType> = {
   nestjs: SiNestjs,
   fastapi: SiFastapi,
   postgresql: SiPostgresql,
+  mongodb: SiMongodb,
   graphql: SiGraphql,
   bullmq: SiRabbitmq,
   llm: RiOpenaiFill,
+  "ai-agents": RiRobot2Line,
   "vector-search": SiElasticsearch,
   embeddings: SiTensorflow,
 };

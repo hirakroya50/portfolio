@@ -2,6 +2,7 @@ export const skillGroups = [
   {
     category: "Languages & Frameworks",
     skills: [
+      "C++",
       "Node.js",
       "Python",
       "TypeScript",

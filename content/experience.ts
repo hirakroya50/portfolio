@@ -4,7 +4,7 @@ export const experience = [
     company: "Lotus Interworks, Inc.",
     role: "Full Stack Engineer (Consultant)",
     type: "Consulting",
-    period: "Jun 2025 – Present",
+    period: "Jun 2026 – Present",
     location: "Los Angeles, USA · Remote",
     current: true,
     highlights: [
@@ -19,9 +19,9 @@ export const experience = [
     company: "Metaverse Ventures Pvt. Ltd.",
     role: "Full Stack Engineer",
     type: "Full-time",
-    period: "Oct 2024 – Present",
+    period: "Oct 2024 – May 2026",
     location: "Hyderabad, India · Remote",
-    current: true,
+    current: false,
     highlights: [
       "Developed and maintained scalable SaaS and Web3 applications using Next.js, FastAPI, and NestJS microservices.",
       "Implemented JWT authentication, RBAC authorization, and OTP verification systems.",
@@ -64,6 +64,6 @@ export const education = [
     degree: "B.Tech, Electrical Engineering",
     institution:
       "Maulana Abul Kalam Azad University of Technology, West Bengal",
-    year: "2020",
+    year: "Aug 2016 – May 2020",
   },
 ];
