@@ -6,14 +6,16 @@ All site copy lives in the `content/` directory. UI components read from these f
 
 | File | What to edit |
 |------|--------------|
-| `content/profile.ts` | Name, title, tagline, contact links, resume path |
+| `content/profile.ts` | Name, title, bio, yearsExperience (single source), contact & social links, avatar |
+| `content/build-with.ts` | Tech items shown in "What I build with" section |
 | `content/experience.ts` | Jobs, highlights, education |
 | `content/projects.ts` | Case studies, tech stack, GitHub/demo links |
 | `content/skills.ts` | Skill groups shown on the home page |
 
 ## Rules
 
-1. **No placeholder URLs** — `demo` must be a real URL or `null`. The build fails on `https://`.
+1. **Experience years** — edit `yearsExperience` in `content/profile.ts` only. Summary text is auto-generated.
+2. **No placeholder URLs** — `demo` must be a real URL or `null`. The build fails on `https://`.
 2. **GitHub links** — must be valid `https://` URLs.
 3. **Project slugs** — lowercase, hyphen-separated (used in `/projects/[slug]`).
 4. **Resume** — keep `public/resume.pdf` in sync when you update `profile.resumePath`.

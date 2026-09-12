@@ -2,12 +2,12 @@ export const skillGroups = [
   {
     category: "Languages & Frameworks",
     skills: [
+      "Node.js",
       "Python",
       "TypeScript",
-      "Node.js",
       "NestJS",
       "FastAPI",
-      "React",
+      "React.js",
       "Next.js",
       "React Native",
     ],
@@ -16,13 +16,13 @@ export const skillGroups = [
     category: "Cloud & Databases",
     skills: [
       "AWS",
+      "Docker",
       "CI/CD",
       "Redis",
       "BullMQ",
       "PostgreSQL",
       "DynamoDB",
       "MongoDB",
-      "Docker",
     ],
   },
   {

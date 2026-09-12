@@ -1,8 +1,15 @@
+import { buildWithTech } from "@/content/build-with";
 import { profile } from "@/content/profile";
 import { experience, education } from "@/content/experience";
 import { projects } from "@/content/projects";
 import { skillGroups } from "@/content/skills";
-import { contentSchema, type Experience, type Project, type Profile } from "@/lib/schemas";
+import {
+  contentSchema,
+  type BuildWithTech,
+  type Experience,
+  type Profile,
+  type Project,
+} from "@/lib/schemas";
 
 const validated = contentSchema.parse({
   profile,
@@ -10,10 +17,19 @@ const validated = contentSchema.parse({
   education,
   skillGroups,
   projects,
+  buildWithTech,
 });
 
+function buildSummary(yearsExperience: string, title: string): string {
+  return `${title} with ${yearsExperience} years of experience delivering scalable software using Node.js, Python, AWS, and LLM integrations. I ship AI-driven products, secure APIs, and real-time systems that perform in production.`;
+}
+
 export function getProfile(): Profile {
-  return validated.profile;
+  const p = validated.profile;
+  return {
+    ...p,
+    summary: buildSummary(p.yearsExperience, p.title),
+  };
 }
 
 export function getExperience(): Experience[] {
@@ -26,6 +42,10 @@ export function getEducation() {
 
 export function getSkillGroups() {
   return validated.skillGroups;
+}
+
+export function getBuildWithTech(): BuildWithTech[] {
+  return validated.buildWithTech;
 }
 
 export function getProjects(): Project[] {

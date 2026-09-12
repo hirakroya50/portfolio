@@ -33,25 +33,34 @@ const experienceSchema = z.object({
   tech: z.array(z.string()).min(1),
 });
 
-const profileSchema = z.object({
+const profileInputSchema = z.object({
   name: z.string().min(1),
   title: z.string().min(1),
   yearsExperience: z.string().min(1),
   tagline: z.string().min(1),
-  summary: z.string().min(1),
+  bio: z.string().min(1),
+  avatar: z.string().min(1),
   email: z.string().email(),
   phone: z.string().min(1),
+  telegram: urlSchema,
   location: z.string().min(1),
   availability: z.string().min(1),
   linkedin: urlSchema,
+  x: urlSchema,
   github: urlSchema,
   leetcode: urlSchema,
   portfolio: urlSchema,
   resumePath: z.string().min(1),
 });
 
+const buildWithSchema = z.object({
+  name: z.string().min(1),
+  slug: z.string().min(1),
+  icon: z.string().min(1),
+});
+
 export const contentSchema = z.object({
-  profile: profileSchema,
+  profile: profileInputSchema,
   experience: z.array(experienceSchema).min(1),
   education: z.array(
     z.object({
@@ -67,11 +76,14 @@ export const contentSchema = z.object({
     }),
   ),
   projects: z.array(projectSchema).min(1),
+  buildWithTech: z.array(buildWithSchema).min(1),
 });
 
-export type Profile = z.infer<typeof profileSchema>;
+export type ProfileInput = z.infer<typeof profileInputSchema>;
+export type Profile = ProfileInput & { summary: string };
 export type Experience = z.infer<typeof experienceSchema>;
 export type Project = z.infer<typeof projectSchema>;
+export type BuildWithTech = z.infer<typeof buildWithSchema>;
 export type SkillGroup = {
   category: string;
   skills: string[];

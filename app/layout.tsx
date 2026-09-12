@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
 import { getProfile } from "@/lib/content";
 
 import "./globals.css";
@@ -59,7 +58,7 @@ function PersonJsonLd() {
     jobTitle: profile.title,
     email: profile.email,
     url: profile.portfolio,
-    sameAs: [profile.github, profile.linkedin, profile.leetcode],
+    sameAs: [profile.github, profile.linkedin, profile.x, profile.leetcode],
   };
 
   return (
@@ -88,7 +87,6 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <Header />
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
       </body>

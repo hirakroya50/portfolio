@@ -2,29 +2,30 @@
 
 :root {
   /* Base */
-  --background: #0b0f14;
-  --foreground: #eef2f6;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
 
-  /* Secondary — surfaces, borders, muted text */
-  --secondary: #131920;
-  --secondary-foreground: #b8c4d4;
-  --muted: #7a8699;
-  --border: #232b36;
+  /* Secondary — warm dark surfaces */
+  --secondary: #1a1410;
+  --secondary-foreground: #e8dcc8;
+  --muted: #9ca3af;
+  --border: #2a2218;
 
-  /* Primary — CTAs, key actions */
-  --primary: #2f6fab;
-  --primary-hover: #3a7fbe;
-  --primary-foreground: #f8fafc;
+  /* Primary — bright red CTAs */
+  --primary: #ef4444;
+  --primary-hover: #dc2626;
+  --primary-foreground: #ffffff;
 
-  /* Accent — links, highlights, badges */
-  --accent: #5b9bd5;
-  --accent-muted: rgba(91, 155, 213, 0.12);
-  --accent-border: rgba(91, 155, 213, 0.28);
+  /* Accent — yellow highlights */
+  --accent: #fbbf24;
+  --accent-secondary: #f59e0b;
+  --accent-muted: rgba(251, 191, 36, 0.12);
+  --accent-border: rgba(251, 191, 36, 0.35);
 
   /* Status */
-  --success: #3d9a6a;
-  --success-muted: rgba(61, 154, 106, 0.12);
-  --success-border: rgba(61, 154, 106, 0.28);
+  --success: #22c55e;
+  --success-muted: rgba(34, 197, 94, 0.12);
+  --success-border: rgba(34, 197, 94, 0.28);
 }
 
 @theme inline {
@@ -47,7 +48,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -72,11 +73,11 @@ body {
 }
 
 ::selection {
-  background: rgba(47, 111, 171, 0.35);
+  background: rgba(239, 68, 68, 0.35);
   color: #fff;
 }
 
 :focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }

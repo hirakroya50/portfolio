@@ -36,7 +36,7 @@ export function Experience() {
                 <ul className="space-y-2 text-sm leading-relaxed text-muted">
                   {job.highlights.map((highlight) => (
                     <li key={highlight} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                       <span>{highlight}</span>
                     </li>
                   ))}
