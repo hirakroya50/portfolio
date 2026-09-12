@@ -66,4 +66,9 @@ export const education = [
       "Maulana Abul Kalam Azad University of Technology, West Bengal",
     year: "Aug 2016 – May 2020",
   },
+  {
+    degree: "Full Stack Web Development",
+    institution: "10x Academy · 6-month coding bootcamp",
+    year: "Web development training",
+  },
 ];
