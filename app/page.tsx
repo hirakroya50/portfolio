@@ -1,30 +1,17 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Experience from "@/components/sections/Experience";
-import Projects from "@/components/sections/Projects";
-import Skills from "@/components/sections/Skills";
-import Contact from "@/components/sections/Contact";
+import { Contact } from "@/components/sections/contact";
+import { Experience } from "@/components/sections/experience";
+import { FeaturedWork } from "@/components/sections/featured-work";
+import { Hero } from "@/components/sections/hero";
+import { Skills } from "@/components/sections/skills";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <div className="section-divider" />
-        <About />
-        <div className="section-divider" />
-        <Experience />
-        <div className="section-divider" />
-        <Projects />
-        <div className="section-divider" />
-        <Skills />
-        <div className="section-divider" />
-        <Contact />
-      </main>
-      <Footer />
+      <Hero />
+      <FeaturedWork />
+      <Experience />
+      <Skills />
+      <Contact />
     </>
   );
 }

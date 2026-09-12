@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# hirakroy.dev — Portfolio
 
-## Getting Started
+Professional portfolio for **Hirak Roy**, Full Stack & AI Engineer.
 
-First, run the development server:
+## Stack
+
+- [Next.js 16](https://nextjs.org/) (App Router, Server Components)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Zod](https://zod.dev/) for build-time content validation
+- Deployed on [Vercel](https://vercel.com/)
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Validate content and build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
+| `pnpm typecheck` | Run TypeScript checks |
+| `pnpm validate` | Validate `content/` files with Zod |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+content/          # All copy, experience, projects, skills
+lib/              # Content loaders and Zod schemas
+components/       # UI, layout, and page sections
+app/              # Next.js routes and SEO files
+public/           # Resume PDF, project images
+docs/CONTENT.md   # Guide for updating site content
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Updating Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit files in `content/` — no component changes needed for copy updates. See [docs/CONTENT.md](docs/CONTENT.md).
 
-## Deploy on Vercel
+Run `pnpm validate` before committing to catch broken links or missing fields.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Connect the GitHub repository to Vercel. Production deploys run automatically on push to `main`.
+
+## License
+
+Private — all rights reserved.
