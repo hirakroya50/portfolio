@@ -1,55 +1,73 @@
+import { FaAws } from "react-icons/fa6";
+import { RiOpenaiFill } from "react-icons/ri";
 import {
-  Box,
-  Braces,
-  Brain,
-  Cloud,
-  Code,
-  Container,
-  Cpu,
-  Database,
-  GitBranch,
-  Layers,
-  Palette,
-  Search,
-  Server,
-  Smartphone,
-  Terminal,
-  Workflow,
-  Zap,
-  type LucideIcon,
-} from "lucide-react";
+  SiCircleci,
+  SiDocker,
+  SiElasticsearch,
+  SiFastapi,
+  SiGithubactions,
+  SiGraphql,
+  SiNestjs,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPython,
+  SiRabbitmq,
+  SiReact,
+  SiRedis,
+  SiTailwindcss,
+  SiTensorflow,
+  SiTypescript,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import type { IconType } from "react-icons";
 
-const iconMap: Record<string, LucideIcon> = {
-  Server,
-  Terminal,
-  Cloud,
-  Container,
-  Braces,
-  Smartphone,
-  Layers,
-  Code,
-  Palette,
-  Box,
-  Zap,
-  Database,
-  Workflow,
-  Cpu,
-  Brain,
-  Search,
-  GitBranch,
+import { cn } from "@/lib/utils";
+
+const iconMap: Record<string, IconType> = {
+  aws: FaAws,
+  docker: SiDocker,
+  redis: SiRedis,
+  "github-actions": SiGithubactions,
+  cicd: SiCircleci,
+  "react-native": TbBrandReactNative,
+  nextjs: SiNextdotjs,
+  react: SiReact,
+  typescript: SiTypescript,
+  tailwind: SiTailwindcss,
+  nodejs: SiNodedotjs,
+  python: SiPython,
+  nestjs: SiNestjs,
+  fastapi: SiFastapi,
+  postgresql: SiPostgresql,
+  graphql: SiGraphql,
+  bullmq: SiRabbitmq,
+  llm: RiOpenaiFill,
+  "vector-search": SiElasticsearch,
+  embeddings: SiTensorflow,
 };
 
 type TechIconProps = {
-  icon: string;
+  slug: string;
   className?: string;
 };
 
-export function TechIcon({ icon, className = "h-4 w-4" }: TechIconProps) {
-  const Icon = iconMap[icon];
+export function TechIcon({ slug, className }: TechIconProps) {
+  const Icon = iconMap[slug];
 
   if (!Icon) {
     return null;
   }
 
-  return <Icon className={className} aria-hidden="true" />;
+  return (
+    <span
+      className={cn(
+        "inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center leading-none",
+        className,
+      )}
+      aria-hidden="true"
+    >
+      <Icon className="h-full w-full" />
+    </span>
+  );
 }

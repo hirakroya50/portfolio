@@ -56,7 +56,6 @@ const profileInputSchema = z.object({
 const buildWithItemSchema = z.object({
   name: z.string().min(1),
   slug: z.string().min(1),
-  icon: z.string().min(1),
 });
 
 const buildWithCategorySchema = z.object({

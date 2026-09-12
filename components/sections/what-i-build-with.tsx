@@ -25,14 +25,14 @@ export function WhatIBuildWith() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2.5">
+              <div className="flex flex-wrap items-center gap-2.5">
                 {category.items.map((item) => (
                   <span
                     key={item.slug}
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/70 px-3.5 py-2 text-sm font-medium text-foreground shadow-sm transition-colors hover:border-[var(--accent-border)] hover:bg-secondary"
+                    className="inline-flex h-9 items-center gap-2 rounded-full border border-border bg-secondary/70 px-3.5 py-0 text-sm font-medium leading-none text-foreground shadow-sm transition-colors hover:border-[var(--accent-border)] hover:bg-secondary"
                   >
-                    <TechIcon icon={item.icon} className="h-4 w-4 shrink-0 text-accent" />
-                    {item.name}
+                    <TechIcon slug={item.slug} />
+                    <span className="leading-none">{item.name}</span>
                   </span>
                 ))}
               </div>
