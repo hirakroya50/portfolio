@@ -53,10 +53,16 @@ const profileInputSchema = z.object({
   resumePath: z.string().min(1),
 });
 
-const buildWithSchema = z.object({
+const buildWithItemSchema = z.object({
   name: z.string().min(1),
   slug: z.string().min(1),
   icon: z.string().min(1),
+});
+
+const buildWithCategorySchema = z.object({
+  category: z.string().min(1),
+  description: z.string().min(1),
+  items: z.array(buildWithItemSchema).min(1),
 });
 
 export const contentSchema = z.object({
@@ -76,14 +82,15 @@ export const contentSchema = z.object({
     }),
   ),
   projects: z.array(projectSchema).min(1),
-  buildWithTech: z.array(buildWithSchema).min(1),
+  buildWithCategories: z.array(buildWithCategorySchema).min(1),
 });
 
 export type ProfileInput = z.infer<typeof profileInputSchema>;
 export type Profile = ProfileInput & { summary: string };
 export type Experience = z.infer<typeof experienceSchema>;
 export type Project = z.infer<typeof projectSchema>;
-export type BuildWithTech = z.infer<typeof buildWithSchema>;
+export type BuildWithItem = z.infer<typeof buildWithItemSchema>;
+export type BuildWithCategory = z.infer<typeof buildWithCategorySchema>;
 export type SkillGroup = {
   category: string;
   skills: string[];

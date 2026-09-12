@@ -1,11 +1,11 @@
-import { buildWithTech } from "@/content/build-with";
+import { buildWithCategories } from "@/content/build-with";
 import { profile } from "@/content/profile";
 import { experience, education } from "@/content/experience";
 import { projects } from "@/content/projects";
 import { skillGroups } from "@/content/skills";
 import {
   contentSchema,
-  type BuildWithTech,
+  type BuildWithCategory,
   type Experience,
   type Profile,
   type Project,
@@ -17,7 +17,7 @@ const validated = contentSchema.parse({
   education,
   skillGroups,
   projects,
-  buildWithTech,
+  buildWithCategories,
 });
 
 function buildSummary(yearsExperience: string, title: string): string {
@@ -44,8 +44,8 @@ export function getSkillGroups() {
   return validated.skillGroups;
 }
 
-export function getBuildWithTech(): BuildWithTech[] {
-  return validated.buildWithTech;
+export function getBuildWithCategories(): BuildWithCategory[] {
+  return validated.buildWithCategories;
 }
 
 export function getProjects(): Project[] {

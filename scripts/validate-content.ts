@@ -1,4 +1,4 @@
-import { buildWithTech } from "../content/build-with";
+import { buildWithCategories } from "../content/build-with";
 import { profile } from "../content/profile";
 import { experience, education } from "../content/experience";
 import { projects } from "../content/projects";
@@ -12,7 +12,7 @@ try {
     education,
     skillGroups,
     projects,
-    buildWithTech,
+    buildWithCategories,
   });
   console.log("Content validation passed.");
 } catch (error) {

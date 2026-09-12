@@ -7,7 +7,7 @@ All site copy lives in the `content/` directory. UI components read from these f
 | File | What to edit |
 |------|--------------|
 | `content/profile.ts` | Name, title, bio, yearsExperience (single source), contact & social links, avatar |
-| `content/build-with.ts` | Tech items shown in "What I build with" section |
+| `content/build-with.ts` | Categories and tech pills for "What I build with" section |
 | `content/experience.ts` | Jobs, highlights, education |
 | `content/projects.ts` | Case studies, tech stack, GitHub/demo links |
 | `content/skills.ts` | Skill groups shown on the home page |
