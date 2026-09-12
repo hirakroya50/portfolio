@@ -8,7 +8,7 @@ export function Experience() {
   const education = getEducation();
 
   return (
-    <section id="experience" className="border-y border-zinc-800 bg-zinc-950 py-20 sm:py-24">
+    <section id="experience" className="border-y border-border bg-secondary/30 py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <SectionHeading
           title="Experience"
@@ -25,16 +25,18 @@ export function Experience() {
                     {job.current ? <Badge variant="success">Current</Badge> : null}
                     <Badge variant="accent">{job.type}</Badge>
                   </div>
-                  <p className="text-sm font-medium text-zinc-300">{job.company}</p>
-                  <p className="text-sm text-zinc-500">{job.location}</p>
+                  <p className="text-sm font-medium text-secondary-foreground">
+                    {job.company}
+                  </p>
+                  <p className="text-sm text-muted">{job.location}</p>
                 </div>
-                <p className="text-sm text-zinc-500 sm:text-right">{job.period}</p>
+                <p className="text-sm text-muted sm:text-right">{job.period}</p>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm leading-relaxed text-zinc-400">
+                <ul className="space-y-2 text-sm leading-relaxed text-muted">
                   {job.highlights.map((highlight) => (
                     <li key={highlight} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -50,7 +52,7 @@ export function Experience() {
         </div>
 
         <div className="mt-10">
-          <h3 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">
+          <h3 className="mb-4 text-sm font-medium uppercase tracking-wider text-muted">
             Education
           </h3>
           {education.map((edu) => (
@@ -58,9 +60,9 @@ export function Experience() {
               <CardHeader className="sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <CardTitle className="text-base">{edu.degree}</CardTitle>
-                  <p className="text-sm text-zinc-400">{edu.institution}</p>
+                  <p className="text-sm text-muted">{edu.institution}</p>
                 </div>
-                <p className="text-sm text-zinc-500">{edu.year}</p>
+                <p className="text-sm text-muted">{edu.year}</p>
               </CardHeader>
             </Card>
           ))}

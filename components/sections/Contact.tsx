@@ -19,7 +19,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="border-t border-zinc-800 bg-zinc-950 py-20 sm:py-24">
+    <section id="contact" className="border-t border-border bg-secondary/30 py-20 sm:py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <SectionHeading
           title="Contact"
@@ -28,7 +28,7 @@ export function Contact() {
 
         <Card>
           <CardContent className="flex flex-col gap-6 p-6 sm:p-8">
-            <p className="max-w-2xl text-sm leading-relaxed text-zinc-400 sm:text-base">
+            <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
               {profile.summary}
             </p>
 
@@ -40,7 +40,7 @@ export function Contact() {
                 </Link>
               </Button>
               <CopyEmailButton email={profile.email} />
-              <Button asChild variant="outline">
+              <Button asChild variant="secondary">
                 <Link href={profile.resumePath} download>
                   Download Resume
                 </Link>
@@ -54,12 +54,12 @@ export function Contact() {
                   href={link.href}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="rounded-lg border border-zinc-800 bg-zinc-900/50 px-4 py-3 transition-colors hover:border-zinc-600"
+                  className="rounded-lg border border-border bg-secondary/50 px-4 py-3 transition-colors hover:border-muted"
                 >
-                  <p className="text-xs uppercase tracking-wider text-zinc-500">
+                  <p className="text-xs uppercase tracking-wider text-muted">
                     {link.label}
                   </p>
-                  <p className="mt-1 text-sm text-zinc-200">{link.value}</p>
+                  <p className="mt-1 text-sm text-foreground">{link.value}</p>
                 </Link>
               ))}
             </div>

@@ -54,13 +54,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Link
           href="/projects"
-          className="mb-8 inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-100"
+          className="mb-8 inline-flex items-center gap-2 text-sm text-muted hover:text-foreground"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to projects
         </Link>
 
-        <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+        <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-xl border border-border bg-secondary">
           <Image
             src={project.image}
             alt={project.title}
@@ -72,10 +72,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         <header className="mb-10">
-          <h1 className="text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+          <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {project.title}
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-zinc-400">
+          <p className="mt-4 text-base leading-relaxed text-muted">
             {project.description}
           </p>
 
@@ -104,7 +104,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <CardTitle className="text-base">{section.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm leading-relaxed text-zinc-400">
+                <p className="text-sm leading-relaxed text-muted">
                   {section.content}
                 </p>
               </CardContent>
@@ -113,7 +113,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         <div className="mt-8">
-          <h2 className="mb-3 text-sm font-medium uppercase tracking-wider text-zinc-500">
+          <h2 className="mb-3 text-sm font-medium uppercase tracking-wider text-muted">
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-2">

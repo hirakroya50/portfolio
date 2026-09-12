@@ -1,17 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --muted: #a1a1aa;
-  --border: #27272a;
-  --surface: #18181b;
-  --accent: #6366f1;
+  /* Base */
+  --background: #0b0f14;
+  --foreground: #eef2f6;
+
+  /* Secondary — surfaces, borders, muted text */
+  --secondary: #131920;
+  --secondary-foreground: #b8c4d4;
+  --muted: #7a8699;
+  --border: #232b36;
+
+  /* Primary — CTAs, key actions */
+  --primary: #2f6fab;
+  --primary-hover: #3a7fbe;
+  --primary-foreground: #f8fafc;
+
+  /* Accent — links, highlights, badges */
+  --accent: #5b9bd5;
+  --accent-muted: rgba(91, 155, 213, 0.12);
+  --accent-border: rgba(91, 155, 213, 0.28);
+
+  /* Status */
+  --success: #3d9a6a;
+  --success-muted: rgba(61, 154, 106, 0.12);
+  --success-border: rgba(61, 154, 106, 0.28);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -47,11 +72,11 @@ body {
 }
 
 ::selection {
-  background: rgba(99, 102, 241, 0.35);
+  background: rgba(47, 111, 171, 0.35);
   color: #fff;
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }

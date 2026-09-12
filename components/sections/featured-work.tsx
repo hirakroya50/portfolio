@@ -21,8 +21,8 @@ export function FeaturedWork() {
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className="group">
-              <Card className="h-full overflow-hidden transition-colors hover:border-zinc-600">
-                <div className="relative aspect-[16/9] overflow-hidden border-b border-zinc-800 bg-zinc-900">
+              <Card className="h-full overflow-hidden transition-colors hover:border-muted">
+                <div className="relative aspect-[16/9] overflow-hidden border-b border-border bg-secondary">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -32,13 +32,13 @@ export function FeaturedWork() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="group-hover:text-indigo-300 transition-colors">
+                  <CardTitle className="transition-colors group-hover:text-accent">
                     {project.title}
                   </CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4 text-sm font-medium text-indigo-400">
+                  <p className="mb-4 text-sm font-medium text-accent">
                     {project.outcome}
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -55,7 +55,7 @@ export function FeaturedWork() {
         <div className="mt-8">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 hover:text-indigo-300"
+            className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-foreground"
           >
             View all projects
             <ArrowRight className="h-4 w-4" />

@@ -22,7 +22,7 @@ export function CopyEmailButton({ email }: CopyEmailButtonProps) {
   }
 
   return (
-    <Button variant="outline" size="sm" onClick={handleCopy} type="button">
+    <Button variant="secondary" size="sm" onClick={handleCopy} type="button">
       {copied ? "Copied" : "Copy email"}
     </Button>
   );

@@ -25,14 +25,14 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="text-sm font-medium tracking-tight text-zinc-100"
+          className="text-sm font-medium tracking-tight text-foreground"
         >
           {profile.name.split(" ")[0]}
-          <span className="text-zinc-500">.dev</span>
+          <span className="text-muted">.dev</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
@@ -40,12 +40,12 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-md px-3 py-2 text-sm text-zinc-400 transition-colors hover:text-zinc-100"
+              className="rounded-md px-3 py-2 text-sm text-muted transition-colors hover:text-foreground"
             >
               {link.label}
             </Link>
           ))}
-          <Button asChild variant="outline" size="sm" className="ml-2">
+          <Button asChild variant="secondary" size="sm" className="ml-2">
             <Link href={profile.resumePath} download>
               Resume
             </Link>
@@ -73,7 +73,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900"
+                  className="rounded-lg px-3 py-2 text-sm text-secondary-foreground hover:bg-secondary"
                 >
                   {link.label}
                 </Link>
@@ -81,7 +81,7 @@ export function Header() {
               <Link
                 href="/projects"
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900"
+                className="rounded-lg px-3 py-2 text-sm text-secondary-foreground hover:bg-secondary"
               >
                 All Projects
               </Link>
