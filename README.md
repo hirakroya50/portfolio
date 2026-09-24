@@ -1,136 +1,46 @@
-# 👨‍💻 Developer Portfolio — Next.js
+# 👨‍💻 hirakroy.dev — Portfolio
 
-My personal developer portfolio built with **Next.js and TypeScript**, showcasing my professional experience, projects, technical skills, and software engineering journey.
+Personal portfolio for **Hirak Roy**, Full Stack & AI Engineer. 
 
-The portfolio highlights my work across **full-stack development, AI-powered applications, backend systems, cloud infrastructure, and modern web technologies**.
+Built with **Next.js (App Router)** and **TypeScript**, showcasing professional experience, software engineering projects, backend systems, and modern web applications.
 
 ---
 
 ## ✨ Features
 
-* 👨‍💻 Personal developer profile
-* 💼 Professional experience
-* 🚀 Featured projects
-* 🛠️ Technical skills and technologies
-* 📄 Resume / career information
-* 📬 Contact information
-* 📱 Responsive design
-* ⚡ Fast and optimized Next.js application
-* 🎨 Modern UI and user experience
-* 🔍 SEO-friendly architecture
+- 👨‍💻 Personal developer profile & journey
+- 💼 Professional work experience & milestones
+- 🚀 Featured projects with live demos & writeups
+- 🛠️ Technical skills & engineering focus areas
+- 📄 Resume / career documentation
+- 📬 Contact & collaboration channels
+- ⚡ Fast, SEO-optimized Server Components architecture
+- 🔒 Build-time content validation with Zod
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Stack
 
-### Frontend
+### Framework & UI
+- [Next.js](https://nextjs.org/) (App Router, React Server Components)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
+### Content & Validation
+- [Zod](https://zod.dev/) for strict build-time schema validation
+- Markdown/JSON-driven content architecture
 
-### Backend & APIs
-
-* Node.js
-* REST APIs
-* PostgreSQL
-* MongoDB
-
-### Cloud & DevOps
-
-* AWS
-* Docker
-* CI/CD
-* GitHub Actions
-
-### AI & Development
-
-* AI-assisted development
-* Prompt engineering
-* AI-powered applications
-* LLM integrations
+### Core Technical Focus
+- **Backend & Data:** Node.js, REST APIs, PostgreSQL, MongoDB
+- **Cloud & DevOps:** Docker, CI/CD, GitHub Actions, Vercel
+- **AI & Emerging Tech:** AI-assisted development, LLM integrations, prompt engineering
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-Clone the repository:
+Clone and run the development environment locally:
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open:
-
-```text
-http://localhost:3000
-```
-
----
-
-## 🏗️ Production Build
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-Start the production server:
-
-```bash
-npm start
-```
-
----
-
-## 📁 Project Structure
-
-```text
-.
-├── app/
-│   ├── page.tsx
-│   ├── layout.tsx
-│   └── ...
-├── components/
-├── public/
-├── styles/
-├── package.json
-├── next.config.ts
-├── tsconfig.json
-└── README.md
-```
-
----
-
-## 🎯 Purpose
-
-This portfolio serves as a central place to showcase my development experience, technical capabilities, and projects.
-
-It demonstrates my approach to building **modern, scalable, maintainable, and production-ready applications** using current web, AI, and cloud technologies.
-
----
-
-## 📬 Contact
-
-For professional opportunities, collaborations, or technical discussions, please use the contact information provided on the portfolio website.
-
----
-
-## 📄 License
-
-This project is for personal portfolio and demonstration purposes.
+pnpm install
+pnpm dev
