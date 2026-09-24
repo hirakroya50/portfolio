@@ -4,9 +4,12 @@ export const profile = {
   yearsExperience: "2.7",
   tagline:
     "Building scalable AI products and production backends with Node.js, Python, and AWS.",
-  bio: `I'm a full-stack engineer who builds things that actually ship and scale. Over the past 2.7 years, I've worked across the stack—mostly living in Python, TypeScript, FastAPI, NestJS, Next.js, and AWS.
+  bio: `I'm a full-stack engineer (2.7 years) who builds things that actually ship and scale. Over the past few years, I've worked across the stack—mostly living in Python, TypeScript, FastAPI, NestJS, Next.js, and AWS.
 
-Lately, most of my time goes into practical AI tooling: turning raw prompts into working frontends, wiring up RAG pipelines, and using vector search to solve actual product problems. On the backend side, I care a lot about speed and reliability, whether that's speeding up GraphQL queries or keeping async jobs smooth with Redis and BullMQ. Always down to build cool tools and clean, fast systems.`,
+Now, my current focus is designing low-cost, low-maintenance software, with a strong focus on database design, architecture, performance, security, scalability, and cost.
+
+I've also built a RAG system that analyzes my technical documents for personal use.
+`,
   avatar: "/profile-pic.jpg",
   email: "hirakroya50@gmail.com",
   phone: "+91 9002297603",
@@ -14,7 +17,7 @@ Lately, most of my time goes into practical AI tooling: turning raw prompts into
   location: "Remote · India",
   availability: "Open to full-time and consulting roles",
   linkedin: "https://www.linkedin.com/in/royhirakp/",
-  x: "https://x.com/hirakroya50",
+  x: "https://x.com/HirakR65047",
   github: "https://github.com/hirakroya50",
   leetcode: "https://leetcode.com/u/royhirakp/",
   portfolio: "https://hirakroy.dev",
