@@ -21,5 +21,5 @@ I've also built a RAG system that analyzes my technical documents for personal u
   github: "https://github.com/hirakroya50",
   leetcode: "https://leetcode.com/u/royhirakp/",
   portfolio: "https://hirakroy.dev",
-  resumePath: "/resume.pdf",
+  resumePath: "https://drive.google.com/drive/folders/121MRmHhMnMEFY8ffYyo-WORdzuQNJ9kv?usp=sharing",
 };
