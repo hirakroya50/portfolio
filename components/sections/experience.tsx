@@ -56,7 +56,7 @@ export function Experience() {
             Education
           </h3>
           {education.map((edu) => (
-            <Card key={edu.degree}>
+            <Card key={edu.degree} className="mt-3">
               <CardHeader className="sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <CardTitle className="text-base">{edu.degree}</CardTitle>
